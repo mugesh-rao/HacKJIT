@@ -30,16 +30,16 @@
           <div class="flex justify-between items-center h-full px-4">
               <!-- Logo Image -->
               <a href="#" class="flex items-center text-gray-300 hover:text-indigo-500">
-                  IEEE
+                  <img src="./asset/ieee1.png" class="w-16 h-8 ml-8" alt="">
               </a>
               
               <!-- Desktop Navigation -->
               <div class="hidden md:flex space-x-8">
-                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Themes">Tracks</a>
+                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Tracks">Tracks</a>
                   <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Sponsors">Sponsors</a>
-                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Schedule">Venue</a>
+                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Venue">Venue</a>
                   <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Organizers">Admin</a>
-                  <a class="cursor-pointer py-2 px-4 my-2 bg-blue-400 rounded-lg text-white text-center hover:rounded-full" href="#FAQs">Registers</a>
+                  <a class="cursor-pointer py-2 px-4 my-2 bg-blue-600 rounded-lg text-white text-center hover:rounded-2xl" href="#">Registers</a>
               </div>
               
               <!-- Mobile Navigation -->
@@ -56,11 +56,13 @@
       
       <div id="mobileNavModal" class="hidden md:hidden fixed z-20 top-0 left-0 w-full h-full flex mx-auto items-center justify-center bg-black bg-opacity-50">
           <div class=" rounded-lg p-6 space-y-10">
-              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block text-2xl font-bold " href="#Themes" onclick="closeMobileNav()">Tracks</a>
-              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block  text-2xl font-bold" href="#Sponsors" onclick="closeMobileNav()">Sponsors</a>
-              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block text-2xl font-bold " href="#Schedule" onclick="closeMobileNav()">Venue</a>
-              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block  text-2xl font-bold" href="#Organizers" onclick="closeMobileNav()">Admin</a>
-              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block  text-2xl font-bold" href="#FAQs" onclick="closeMobileNav()">Registers</a>
+              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block text-2xl font-bold " href="#Tracks" onclick="closeMobileNav()">Tracks</a>
+              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#Sponsors" onclick="closeMobileNav()">Sponsors</a>
+              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block text-2xl font-bold " href="#Schedule" onclick="closeMobileNav()">Venue</a>
+              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#Organizers" onclick="closeMobileNav()">Admin</a>
+              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#" onclick="closeMobileNav()">Registers</a>
+              <a class="cursor-pointer text-red-500 hover:text-red-500 block  text-2xl font-bold border border-red-500 text-center rounded-lg p-1" onclick="closeMobileNav()">Close</a>
+
           </div>
       </div>
       
@@ -80,14 +82,14 @@
       <section id="Home" class="m-auto flex w-full flex-col justify-evenly px-0 xl:flex-row-reverse xl:justify-between xl:px-6">
         <div class="flex w-full items-center justify-start">
             <img class="z-10 m-auto h-[280px] w-auto md:h-[360px] xl:h-[500px]"
-                src="https://pbs.twimg.com/profile_images/474591466749034496/2-H1zqWf_400x400.jpeg">
+                src="./asset/ieeebvm.png">
         </div>
         <div class="relative mx-auto w-full max-w-md space-y-0 py-20 xl:space-y-6">
             <div class="text-white flex items-center justify-center space-y-4 text-2xl font-semibold">
                 JOIN THE IEEE NSFT 2023 EVENT
             </div>
             <div class="text-white flex items-center justify-center space-y-4 text-lg font-semibold">
-          Greatest event Ever
+              National Symposium on Futuristic Technologies
           </div>
             <div class="text-white flex flex-row justify-center gap-1 text-4xl font-bold sm:text-7xl">
                 <div class="flex flex-col gap-2 text-center">
@@ -103,13 +105,13 @@
             <div class="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-10 text-sm sm:text-base">
              
               <!-- Contained Button with Hover Effect -->
-              <a href="https://discord.com/widget?id=1101575465384300737&amp;theme=dark" target="_blank"
+              <a href="#" target="_blank"
                   rel="noopener noreferrer"
                   class="flex w-80 items-center justify-center gap-2 rounded-md bg-indigo-500 py-2.5 text-white hover:bg-indigo-600">
                   <span>View Details</span>
               </a>
                <!-- Outlined Button -->
-               <a href="https://discord.com/widget?id=1101575465384300737&amp;theme=dark" target="_blank"
+               <a href="#" target="_blank"
                rel="noopener noreferrer"
                class="flex w-80 items-center justify-center gap-2 rounded-md border-2 border-indigo-500 py-2.5 text-white hover:bg-indigo-500 hover:text-white">
                <span>Register Now</span>
@@ -120,9 +122,9 @@
     </section>
     
       </div>
-      <section id="About" class="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-14">
+      <section id="Tracks" class="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-14">
      
-          <h3 class=" z-60 text-center text-xl font-semibold text-white">Networking</h3>
+        <div class="text-white  mb-20 text-center text-4xl font-semibold sm:text-5xl">Tracks</div>
         <div class="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div class="z-10 flex flex-col items-center justify-center space-y-3 rounded-sm border-2 border-indigo-600 bg-indigo-800 bg-opacity-10 p-8 transition duration-200 hover:shadow-lg"><div class="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-white"><path d="M19 6.844a2.007 2.007 0 0 1 1 1.752v6.555c0 .728 -.394 1.399 -1.03 1.753l-6 3.844a2 2 0 0 1 -1.942 0l-6 -3.844a2.007 2.007 0 0 1 -1.029 -1.752v-6.556c0 -.729 .394 -1.4 1.029 -1.753l6 -3.583a2.05 2.05 0 0 1 2 0l6 3.584h-.03z"></path><path d="M12 16.5v4.5"></path><path d="M4.5 7.5l3.5 2.5"></path><path d="M16 10l4 -2.5"></path><path d="M12 7.5v4.5l-4 2"></path><path d="M12 12l4 2"></path><path d="M12 16.5l4 -2.5v-4l-4 -2.5l-4 2.5v4z"></path></svg></div><h3 class="text-center text-xl font-semibold text-white">Experience</h3><p class="text-center text-gray-300">Participating in a hackathon offers an opportunity to work collaboratively with like-minded individuals to develop creative solutions to real-world problems.</p></div>
           <div
@@ -279,70 +281,49 @@
           </div>
         </div>
       </section>
-      <section id="Sponsors" class="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10">
+      <section id="Sponsors" class="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:pt-10">
        
         <h1 class="text-white  flex justify-center text-4xl font-bold"> SPONSORS</h1>
         <div class="flex flex-wrap justify-center gap-10 py-10">
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://gen.xyz/"><img
-                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="XYZ LOGO"
+                src="./asset/ieee1.png" loading="lazy" alt="XYZ LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.taskade.com/"><img
-                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png"
+                src="./asset/ieee1.png"
                 loading="lazy" alt="TASKADE LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.avairsense.com/"><img
-                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="avairsense LOGO"
+                src="./asset/ieee1.png" loading="lazy" alt="avairsense LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.wolfram.com/"><img
-                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="WOLFRAM LOGO"
+                src="./asset/ieee1.png" loading="lazy" alt="WOLFRAM LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.codechef.com/"><img
-                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="CODECHEF LOGO"
+                src="./asset/ieee1.png" loading="lazy" alt="CODECHEF LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
         </div>
      
       </section>
-      <section id="Organizers" class="min-h-screen rounded-lg bg-gray-900 px-2 pb-4 pt-5 text-lg sm:px-10 sm:pt-10 ">
-        <div class="text-white  mb-12 flex justify-center text-4xl font-semibold">Organizing Heads</div>
+      <section id="Organizers" class="min-h-screen rounded-lg bg-gray-900 px-2 pb-4  text-lg sm:px-10 ">
+        <div class="text-white  mb-12 flex justify-center text-4xl font-semibold">Organizing Admin</div>
         <div class="flex flex-wrap justify-center gap-4 sm:gap-10">
           <div
             class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
             <img
-              src="https://media.discordapp.net/attachments/1028192038463750184/1105801830593736724/Profile.jpg?width=1020&amp;height=1020"
+              src="https://e1.pxfuel.com/desktop-wallpaper/352/697/desktop-wallpaper-naruto-uzumaki-naruto-naruto-pinterest-naruto-profile.jpg"
               loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
             <div>
-              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Abhiram C
+              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Naruto
               </div>
               <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
             </div>
           </div>
           <div
             class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1097580664959807568/1105379718489976892/SRD4932.jpg"
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/352/697/desktop-wallpaper-naruto-uzumaki-naruto-naruto-pinterest-naruto-profile.jpg"
               loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
             <div>
-              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Karthikay G
-              </div>
-              <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
-            <img
-              src="https://lh3.googleusercontent.com/fife/APg5EOZLTI57_6lDq9XReGBgrmz8VW08-7_vRey1OPgIQL45aDFz_zi62hgXwMVUN4B6ljZfS9J6316SZoTZbIfg0dum80WlVBReLhDe-uI6jFmSSQNXnB-FENTIKrx0bHMMFRQeSUgJL1eF2FMU53PITMal0xV_rBxgZtN1esXIScJ7Wsw4bx926-i0gutMNVccrKYu2BQsxbqAvu4OwIJU6X7bspMPRkYUif9Il45wSW--TzjqxVRJSq3ot8siaKglZXuaBW9Z9nHZPxwOJn6HVtyvH3i8CWQ2EWHARTTtt7k4qk0CROEEm8_vPneCfp5MyvmFy5SH928bVQoOjBgsqFiftK0UvbtXwPsRZhmh3wYYTuo0qQoarEiz6w8at5A0kW1HaRGCFzDZDSNBw4BnGiXK3nYVxWcf1ZSUSy6lPPoY1HOu2AsD4-Em7vXMjK07t51ae74Rccawj1OO7-jmU3nLacHMxidwaCD8kdX8YI0s4t7DVfaY8c0uZCAuVAYSn9NDWVjS8waUB_qCPoL2sNVErNBLt4bXOjrgfrmBHvA277K08Pod-u-u_4oKbZ8Bn9fuPe740w_Jr0DmpEkVjy3wiDDeAY7cvzH6r2HUvyJWlTAzOzyKZcw8Tu0xImtneXA8mY5YEWq0XHsal7XyAI7FLzg9oBuu-sHsXXsMHTxtLdg3VCxaxZi9wxqtqzcVMYNgzy22JLQ_C87w6ggdaO_CgNaHGjQ9naKiMXlQlvQbVIM1WQJJcUf-GwpwFnjV4YpDDpHWV5dDwXYf4ckXhYEzPxErZx-zg7vaD164_ZXXmmfwgsPJwO3a6nJMX5oKtK1t6qKzEwib-pEOZ6_0dbX8xpaxKSIJshnABAWAdUnZKyU2s3bvhUSMAW9fYROZXwr6OB5Qc9CFE_puvUFeZOoGssQqbnfxDAg_cXgSRruyr8gQe-5qorbxVigvKeDiApV7j3Osm1LMQ4IPxaiccW0ce9WM1r2AujJV4YM905YzDqyN2PteJ8y-0LIEFyAkDshgMXODv4eHrRPwWzhj6T1UZUlFCx6aZ5xuez8vI_9lWLC96a9UF-hO9OjE5Kt8Xk7RZBhDp5Ni1fMfKbQ1-bxdL_QDuzVrLoql3U40yrAtlCwI6vX48hDfjMi-KnDa2zQyMRF9BEEFOzhZlDPYg6B_1R7yXfe4wU3q2W83cXsYO5CSSednyqNhkF5imJFLdkIHMK5Ry7cTVGswSOz5dHYoin1kfI8eT_gocY86IShNn7dCFSNS3XfRmxS2PGlWVQnm6WktGPS6k94Atmdk3ehciI1o5EuQ6X9R5Xa3Vb6BvaVydEZ2IauFQ4Z4SUjSPSzELufor3dPZE3qur41-DYGrMe_f1q3SNLw6LoIIwDO7rtAL41f71lKNy-lQSoysYc86c3DHlgefc0ozeDUbwRVmhoRSZDsPhbobTba0Ytdx3FSh0DsvcZ7RWE_E6Hwg_cFxkCv66eBSRL1gHt5hifODeyBisV8HZPAxYD-SCWUguzYJNQQsAdCODpKfh17GOyUK78n13h9JS1CyQDmFJ2WpE0IHyM3in5YzHw=w4000-h8220"
-              loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
-            <div>
-              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Gnanesh D
-              </div>
-              <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1078952614223425667/1105116437217038396/IMG_5078_2.jpg"
-              loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
-            <div>
-              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Sai Krishna
+              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Naruto
               </div>
               <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
             </div>
@@ -350,10 +331,31 @@
           <div
             class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
             <img
-              src="https://media.discordapp.net/attachments/1105806992129396776/1105814416139751484/IMG-20220222-WA0016.jpg?width=764&amp;height=1020"
+              src="https://e1.pxfuel.com/desktop-wallpaper/352/697/desktop-wallpaper-naruto-uzumaki-naruto-naruto-pinterest-naruto-profile.jpg"
               loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
             <div>
-              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Pranav P
+              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Naruto
+              </div>
+              <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
+            </div>
+          </div>
+          <div
+            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/352/697/desktop-wallpaper-naruto-uzumaki-naruto-naruto-pinterest-naruto-profile.jpg"
+              loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
+            <div>
+              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Naruto
+              </div>
+              <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
+            </div>
+          </div>
+          <div
+            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
+            <img
+              src="https://e1.pxfuel.com/desktop-wallpaper/352/697/desktop-wallpaper-naruto-uzumaki-naruto-naruto-pinterest-naruto-profile.jpg"
+              loading="lazy" alt="" class="h-16 w-16 rounded-md object-cover object-center sm:h-32 sm:w-32">
+            <div>
+              <div class="indigo mb-2 text-center text-xl font-medium text-gray-200 antialiased md:text-lg">Naruto
               </div>
               <div class=" sm:text-md flex justify-center text-lg text-gray-300">Advisor</div>
             </div>
@@ -361,130 +363,8 @@
         </div>
         
       </section>
-      <section id="FAQs" class="min-h-screen bg-gray-900 py-4 pt-20">
-        <div class="text-white  mb-20 text-center text-4xl font-semibold sm:text-5xl">Frequently Asked Questions
-        </div>
-        <div class="mx-auto px-3">
-          <div class="mx-auto flex max-w-2xl flex-col space-y-3 rounded-md">
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">What is a hackathon
-                    ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-up">
-                      <path d="M6 15l6 -6l6 6"></path>
-                    </svg></span>
-                </div>
-                <p class="mb-4 py-2 font-normal text-gray-300 antialiased">A hackathon is a programming competition in
-                  which competitors use technology to build innovative projects within a fixed time duration. There will
-                  be opportunities to win cool prizes, learn from our key-note speakers, and network with our sponsors.
-                </p>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">Who can participate in
-                    HackSRM ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">Do I have to know how to
-                    code to join ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">How much does it cost to
-                    participate in HackSRM ??</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">Is it a team event
-                    ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">Can I apply individually
-                    ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                      fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">Is there a code of
-                    conduct ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-            <div class="z-10">
-              <div class="rounded-md border border-gray-700 px-4 shadow">
-                <div
-                  class="flex cursor-pointer justify-between gap-2 py-3 text-white hover:text-indigo-500 active:text-indigo-500">
-                  <span class="z-10 text-base font-medium antialiased transition duration-100">What is the venue of the
-                    hackathon ?</span><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down"
-                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                      <path d="M6 9l6 6l6 -6"></path>
-                    </svg></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="ContactUs" class="min-h-screen bg-gray-900 py-10">
+     
+      <section id="ContactUs" class="min-h-screen bg-gray-900 pt-10">
         <div class="text-white  my-20 text-center text-4xl font-semibold sm:text-5xl">Contact Us</div>
         <div class="my-8 flex flex-col items-center justify-evenly space-y-10">
           <div class="flex items-center justify-center space-x-6"><svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -496,12 +376,12 @@
               <path d="M3 7l9 6l9 -6"></path>
             </svg>
             <div class="indigo z-10 text-center text-xl text-gray-200 antialiased sm:text-2xl"><a
-                href="mailto:help@hacksrm.tech">help@hacksrm.tech</a></div>
+                href="mailto:help@hacksrm.tech">rao@email.com</a></div>
           </div>
         </div>
         <div class="flex items-center justify-center space-x-6">
           <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
-              href="https://www.instagram.com/hacksrm23/" target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/mugeshraoo/" target="_blank" rel="noopener noreferrer"
               class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" class="text-fuchsia-500" data-darkreader-inline-stroke=""
@@ -511,7 +391,7 @@
                 <path d="M16.5 7.5l0 .01"></path>
               </svg></a></div>
           <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
-              href="https://twitter.com/HackSrm23" target="_blank" rel="noopener noreferrer"
+              href="https://twitter.com/Mugesh_Rao_Dev" target="_blank" rel="noopener noreferrer"
               class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" class="text-blue-400" data-darkreader-inline-stroke=""
@@ -521,7 +401,7 @@
                 </path>
               </svg></a></div>
           <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
-              href="https://www.linkedin.com/in/hack-srm-0a5624274/" target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/mugesh-rao-2003/" target="_blank" rel="noopener noreferrer"
               class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" class="text-blue-600" data-darkreader-inline-stroke=""
@@ -535,8 +415,8 @@
         </div>
         <div class="flex flex-col items-center justify-center space-y-6 pt-8 text-white">
           <h5 class="text-center text-2xl font-semibold text-gray-200">In Collaboration With</h5><img
-            src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512128867213382/ntllogo.png"
-            alt="NextTech Logo" class="z-10 h-24 rounded-md p-4">
+            src="./asset/ieee1.png"
+            alt="IEEE" class="z-10 h-24 rounded-md p-4">
         </div>
       </section>
     </div>
