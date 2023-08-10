@@ -6,118 +6,125 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <title>NFTS 2023 - IEEE </title>
 </head>
 
 <body>
   <div id="root">
     <div class="">
       <div class="fixed inset-0 z-0">
-        <div style="position: relative; width: 100%; height: 100%; overflow: hidden; pointer-events: auto;">
-          <div style="width: 100%; height: 100%;"><canvas style="display: block; width: 444px; height: 713.6px;"
-              data-engine="three.js r152" width="555" height="892"></canvas></div>
+        <div class="relative w-full h-full overflow-hidden pointer-events-auto z-50">
+          <div class="w-full h-full">
+            <!-- Desktop Image -->
+            <img class="hidden sm:block w-full h-full" src="./asset/desktop.png" alt="Desktop Image Alt Text" />
+
+            <!-- Mobile Image -->
+            <img class="block sm:hidden w-full h-full" src="./asset/mobile.png" alt="Mobile Image Alt Text" />
+          </div>
         </div>
       </div>
+
+
       <div class="flex min-h-screen items-center justify-center bg-gray-900">
-        <div
-          class="fixed left-0 right-0 top-0 z-20 h-14 border-b border-gray-700 bg-gray-900 bg-opacity-80 backdrop-blur-lg backdrop-filter">
-          <div class="hidden h-full md:block">
-            <div class="flex h-full items-center justify-around px-4"><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500" href="#Home">Home</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500" href="#About">About</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
-                href="#Prizes">Prizes</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
-                href="#Themes">Themes</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
-                href="#Sponsors">Sponsors</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
-                href="#Schedule">Schedule</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500"
-                href="#Organizers">Organizers</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500" href="#FAQs">FAQs</a><a
-                class="indigo cursor-pointer text-gray-300 antialiased hover:text-indigo-500" href="#ContactUs">Contact
-                Us</a></div>
+        <div class="fixed left-0 right-0 top-0 z-20 h-14 border-b border-gray-700 bg-gray-900 bg-opacity-80 backdrop-blur-lg backdrop-filter">
+          <div class="flex justify-between items-center h-full px-4">
+              <!-- Logo Image -->
+              <a href="#" class="flex items-center text-gray-300 hover:text-indigo-500">
+                  IEEE
+              </a>
+              
+              <!-- Desktop Navigation -->
+              <div class="hidden md:flex space-x-8">
+                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Themes">Tracks</a>
+                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Sponsors">Sponsors</a>
+                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Schedule">Venue</a>
+                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Organizers">Admin</a>
+                  <a class="cursor-pointer py-2 px-4 my-2 bg-blue-400 rounded-lg text-white text-center hover:rounded-full" href="#FAQs">Registers</a>
+              </div>
+              
+              <!-- Mobile Navigation -->
+              <div class="md:hidden">
+                  <button id="mobileNavButton" onclick="toggleMobileNav()">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-white">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                      </svg>
+                  </button>
+              </div>
           </div>
-          <div class="block h-full md:hidden">
-            <div class="flex h-full items-center px-4"><button><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-gray-100"
-                  data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
-                </svg></button></div>
-          </div>
-        </div>
-        <section id="Home"
-          class="m-auto flex w-full flex-col justify-evenly  px-0 xl:flex-row-reverse xl:justify-between xl:px-6">
-          <div class="flex w-full items-center justify-start"><img
-              class="z-10 m-auto h-[280px] w-auto md:h-[360px] xl:h-[500px]" src="/hack-srm-logo.png"></div>
-          <div class="relative mx-auto w-full max-w-md space-y-0 py-20 xl:space-y-6">
-            <div class="title-gradient flex items-center justify-center space-y-4 text-2xl font-semibold">HACKATHON
-              STARTS IN</div>
-            <div class="title-gradient flex flex-row justify-center gap-1 text-4xl font-bold sm:text-7xl">
-              <div class="flex flex-col gap-2 text-center"><span>05</span><span class="text-sm lg:text-lg">Days</span>
-              </div><span>:</span>
-              <div class="flex flex-col gap-2 text-center"><span>01</span><span class="text-sm lg:text-lg">Hours</span>
-              </div><span>:</span>
-              <div class="flex flex-col gap-2 text-center"><span>44</span><span
-                  class="text-sm lg:text-lg">Minutes</span></div>
-            </div>
-            <div
-              class="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-10 text-sm sm:text-base">
-              <iframe src="https://apply.devfolio.co/v2/button?hackathonSlug=hack-srm&amp;buttonTheme=light"
-                title="Apply with Devfolio" class="devfolio-button-iframe"
-                sandbox="allow-scripts allow-same-origin allow-top-navigation allow-top-navigation-by-user-activation"
-                style="padding: 0px; border: 0px; margin: 0px; height: 44px; width: 312px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;"
-                data-darkreader-inline-border-top="" data-darkreader-inline-border-right=""
-                data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""></iframe><a
-                href="https://discord.com/widget?id=1101575465384300737&amp;theme=dark" target="_blank"
-                rel="noopener noreferrer"
-                class="flex w-80 items-center justify-center gap-2 rounded-md bg-indigo-500 py-2.5 text-white"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="tabler-icon tabler-icon-brand-discord" data-darkreader-inline-stroke=""
-                  style="--darkreader-inline-stroke: currentColor;">
-                  <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
-                  <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
-                  <path
-                    d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3">
-                  </path>
-                  <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
-                </svg><span>Join Discord</span></a>
-            </div>
-          </div>
-        </section>
       </div>
-      <section id="About" class="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-28">
-        <div class="max-w-3xl space-y-3">
-          <h2 class="title-gradient font-orbitron z-10 mb-6 text-4xl font-semibold sm:text-5xl">Why you need to
-            participate in HackSRM?</h2>
-          <p class="z-10 text-gray-200">Hack SRM is a 24-hour hackathon where you can build your dream project with your
-            friends and win exciting prizes. It is a great opportunity to learn new skills, meet new people, and have
-            fun.</p>
-        </div>
-        <div class="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div
-            class="z-10 flex flex-col items-center justify-center space-y-3 rounded-sm border-2 border-indigo-600 bg-indigo-800 bg-opacity-10 p-8 transition duration-200 hover:shadow-lg">
-            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600"><svg
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                class="h-8 w-8 text-white" data-darkreader-inline-stroke=""
-                style="--darkreader-inline-stroke: currentColor;">
-                <path
-                  d="M19 6.844a2.007 2.007 0 0 1 1 1.752v6.555c0 .728 -.394 1.399 -1.03 1.753l-6 3.844a2 2 0 0 1 -1.942 0l-6 -3.844a2.007 2.007 0 0 1 -1.029 -1.752v-6.556c0 -.729 .394 -1.4 1.029 -1.753l6 -3.583a2.05 2.05 0 0 1 2 0l6 3.584h-.03z">
-                </path>
-                <path d="M12 16.5v4.5"></path>
-                <path d="M4.5 7.5l3.5 2.5"></path>
-                <path d="M16 10l4 -2.5"></path>
-                <path d="M12 7.5v4.5l-4 2"></path>
-                <path d="M12 12l4 2"></path>
-                <path d="M12 16.5l4 -2.5v-4l-4 -2.5l-4 2.5v4z"></path>
-              </svg></div>
-            <h3 class="text-center text-xl font-semibold text-white">Experience</h3>
-            <p class="text-center text-gray-300">Participating in a hackathon offers an opportunity to work
-              collaboratively with like-minded individuals to develop creative solutions to real-world problems.</p>
+      
+      
+      <div id="mobileNavModal" class="hidden md:hidden fixed z-20 top-0 left-0 w-full h-full flex mx-auto items-center justify-center bg-black bg-opacity-50">
+          <div class=" rounded-lg p-6 space-y-10">
+              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block text-2xl font-bold " href="#Themes" onclick="closeMobileNav()">Tracks</a>
+              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block  text-2xl font-bold" href="#Sponsors" onclick="closeMobileNav()">Sponsors</a>
+              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block text-2xl font-bold " href="#Schedule" onclick="closeMobileNav()">Venue</a>
+              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block  text-2xl font-bold" href="#Organizers" onclick="closeMobileNav()">Admin</a>
+              <a class="cursor-pointer text-gray-700 hover:text-indigo-500 block  text-2xl font-bold" href="#FAQs" onclick="closeMobileNav()">Registers</a>
           </div>
+      </div>
+      
+      <script>
+          const mobileNavModal = document.getElementById("mobileNavModal");
+      
+          function toggleMobileNav() {
+              mobileNavModal.classList.toggle("hidden");
+          }
+      
+          function closeMobileNav() {
+              mobileNavModal.classList.add("hidden");
+          }
+      </script>
+      
+      
+      <section id="Home" class="m-auto flex w-full flex-col justify-evenly px-0 xl:flex-row-reverse xl:justify-between xl:px-6">
+        <div class="flex w-full items-center justify-start">
+            <img class="z-10 m-auto h-[280px] w-auto md:h-[360px] xl:h-[500px]"
+                src="https://pbs.twimg.com/profile_images/474591466749034496/2-H1zqWf_400x400.jpeg">
+        </div>
+        <div class="relative mx-auto w-full max-w-md space-y-0 py-20 xl:space-y-6">
+            <div class="text-white flex items-center justify-center space-y-4 text-2xl font-semibold">
+                JOIN THE IEEE NSFT 2023 EVENT
+            </div>
+            <div class="text-white flex items-center justify-center space-y-4 text-lg font-semibold">
+          Greatest event Ever
+          </div>
+            <div class="text-white flex flex-row justify-center gap-1 text-4xl font-bold sm:text-7xl">
+                <div class="flex flex-col gap-2 text-center">
+                    <span>00</span><span class="text-sm lg:text-lg">Days</span>
+                </div><span>:</span>
+                <div class="flex flex-col gap-2 text-center">
+                    <span>00</span><span class="text-sm lg:text-lg">Hours</span>
+                </div><span>:</span>
+                <div class="flex flex-col gap-2 text-center">
+                    <span>00</span><span class="text-sm lg:text-lg">Minutes</span>
+                </div>
+            </div>
+            <div class="absolute flex w-full flex-col flex-wrap items-center justify-center gap-4 pt-10 text-sm sm:text-base">
+             
+              <!-- Contained Button with Hover Effect -->
+              <a href="https://discord.com/widget?id=1101575465384300737&amp;theme=dark" target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex w-80 items-center justify-center gap-2 rounded-md bg-indigo-500 py-2.5 text-white hover:bg-indigo-600">
+                  <span>View Details</span>
+              </a>
+               <!-- Outlined Button -->
+               <a href="https://discord.com/widget?id=1101575465384300737&amp;theme=dark" target="_blank"
+               rel="noopener noreferrer"
+               class="flex w-80 items-center justify-center gap-2 rounded-md border-2 border-indigo-500 py-2.5 text-white hover:bg-indigo-500 hover:text-white">
+               <span>Register Now</span>
+           </a>
+          </div>
+          
+        </div>
+    </section>
+    
+      </div>
+      <section id="About" class="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-14">
+     
+          <h3 class=" z-60 text-center text-xl font-semibold text-white">Networking</h3>
+        <div class="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div class="z-10 flex flex-col items-center justify-center space-y-3 rounded-sm border-2 border-indigo-600 bg-indigo-800 bg-opacity-10 p-8 transition duration-200 hover:shadow-lg"><div class="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-white"><path d="M19 6.844a2.007 2.007 0 0 1 1 1.752v6.555c0 .728 -.394 1.399 -1.03 1.753l-6 3.844a2 2 0 0 1 -1.942 0l-6 -3.844a2.007 2.007 0 0 1 -1.029 -1.752v-6.556c0 -.729 .394 -1.4 1.029 -1.753l6 -3.583a2.05 2.05 0 0 1 2 0l6 3.584h-.03z"></path><path d="M12 16.5v4.5"></path><path d="M4.5 7.5l3.5 2.5"></path><path d="M16 10l4 -2.5"></path><path d="M12 7.5v4.5l-4 2"></path><path d="M12 12l4 2"></path><path d="M12 16.5l4 -2.5v-4l-4 -2.5l-4 2.5v4z"></path></svg></div><h3 class="text-center text-xl font-semibold text-white">Experience</h3><p class="text-center text-gray-300">Participating in a hackathon offers an opportunity to work collaboratively with like-minded individuals to develop creative solutions to real-world problems.</p></div>
           <div
             class="z-10 flex flex-col items-center justify-center space-y-3 rounded-sm border-2 border-indigo-600 bg-indigo-800 bg-opacity-10 p-8 transition duration-200 hover:shadow-lg">
             <div class="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600"><svg
@@ -168,47 +175,9 @@
           </div>
         </div>
       </section>
-      <section id="Prizes" class="my-0 min-h-screen justify-center bg-gray-900 px-6 py-10 sm:px-20 sm:py-24">
-        <div
-          class="mb-6 flex flex-wrap items-center justify-center space-x-3 pb-10 text-center text-3xl font-semibold leading-relaxed text-indigo-200 sm:text-5xl">
-          <div>Prizes Worth more than</div>
-          <div class="rounded-2xl bg-indigo-500 px-3 py-1.5 text-white">₹40 LAKHS!</div>
-        </div>
-        <div class="flex w-full flex-wrap justify-center gap-8">
-          <div class=""><img src="/sponsores/1st.png" alt="FIRST" class="w-80"></div>
-          <div class=""><img src="/sponsores/2nd.png" alt="SECOND" class="w-80"></div>
-          <div class=""><img src="/sponsores/3rd.png" alt="THIRD" class="w-80"></div>
-        </div>/<div></div>
-      </section>
-      <section id="Prizes" class="my-0 min-h-screen justify-center bg-gray-900 px-6 py-10 sm:px-20 sm:py-24">
-        <div class="title-gradient mb-6 pb-10 text-center text-3xl font-semibold leading-relaxed sm:text-5xl">Track
-          Prizes</div>
-        <div class=" flex w-full flex-wrap justify-center">
-          <div class="mb-10 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105800054834466876/polygon.png?width=844&amp;height=1040"
-              alt="polygon" class="w-64"></div>
-          <div class="mb-10 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105798786242052139/Group_34.png?width=844&amp;height=1040"
-              alt="taskade" class="w-64"></div>
-          <div class="mb-10 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105798787517128704/Group_40.png?width=844&amp;height=1040"
-              alt="solana" class="w-64"></div>
-          <div class="mb-10 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105798785868767292/Group_33.png?width=844&amp;height=1040"
-              alt="wolfram" class="w-64"></div>
-          <div class="mb-10 mt-5 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105798785537409094/Group_32.png?width=844&amp;height=740"
-              alt="xyz" class="w-80"></div>
-          <div class="mb-10 mt-5 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105799411910590524/repl.png?width=844&amp;height=740"
-              alt="replit" class="w-80"></div>
-          <div class="mb-10 mt-5 sm:mx-5"><img
-              src="https://media.discordapp.net/attachments/1046339552027082803/1105798786560823296/Group_37.png?width=844&amp;height=740"
-              alt="filecoin" class="w-80"></div>
-        </div>/<div></div>
-      </section>
+     
       <section id="Themes" class="min-h-screen w-full bg-gray-900 px-0 py-16 md:px-10">
-        <div class="title-gradient mb-20 text-center text-4xl font-semibold sm:text-5xl">Themes</div>
+        <div class="text-white  mb-20 text-center text-4xl font-semibold sm:text-5xl">Themes</div>
         <div class="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3">
           <div
             class="z-10 flex flex-col items-center justify-evenly space-y-4 rounded-lg border border-gray-700 bg-gray-900 p-8">
@@ -311,119 +280,30 @@
         </div>
       </section>
       <section id="Sponsors" class="min-h-screen bg-gray-900 px-2 pb-4 pt-5 sm:px-10 sm:pt-10">
-        <div class="w-full py-10">
-          <div class="title-gradient title-gradient pb-10 text-3xl font-bold sm:text-4xl">
-            <h1 class="flex justify-center">TITLE SPONSOR</h1>
-          </div>
-          <div class="z-10 flex cursor-pointer justify-center py-10"><a href="https://nimblebox.ai/" target="_blank"
-              class="z-10"><img src="https://nimblebox.ai/_next/static/media/site-logo-light.148d6d0b.svg"
-                alt="NIMBLEBOX LOGO" class="h-20 px-4"></a></div>
-        </div>
-        <h1 class="title-gradient flex justify-center text-4xl font-bold">PLATINUM SPONSORS</h1>
+       
+        <h1 class="text-white  flex justify-center text-4xl font-bold"> SPONSORS</h1>
         <div class="flex flex-wrap justify-center gap-10 py-10">
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://gen.xyz/"><img
-                src="/sponsores/xyz_1.png" loading="lazy" alt="XYZ LOGO"
+                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="XYZ LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.taskade.com/"><img
                 src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png"
                 loading="lazy" alt="TASKADE LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.avairsense.com/"><img
-                src="/sponsores/avairsense.png" loading="lazy" alt="avairsense LOGO"
+                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="avairsense LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.wolfram.com/"><img
-                src="/sponsores/wolfram.png" loading="lazy" alt="WOLFRAM LOGO"
+                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="WOLFRAM LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
           <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://www.codechef.com/"><img
-                src="/sponsores/codechef.png" loading="lazy" alt="CODECHEF LOGO"
+                src="https://cdn.discordapp.com/attachments/1024859933524627457/1105512360476688444/taskade.png" loading="lazy" alt="CODECHEF LOGO"
                 class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
         </div>
-        <h1 class="title-gradient flex justify-center text-4xl font-bold">GOLD SPONSORS</h1>
-        <div class="flex flex-wrap justify-center gap-10 py-10">
-          <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://polygon.technology/"><img
-                src="/sponsores/polygon.png" loading="lazy" alt="POLYGON LOGO"
-                class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
-        </div>
-        <h1 class="title-gradient flex justify-center text-4xl font-bold">SILVER SPONSORS</h1>
-        <div class="flex flex-wrap justify-center gap-10 py-10">
-          <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://solana.com/"><img
-                src="/sponsores/solana.png" loading="lazy" alt="SOLANA LOGO"
-                class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
-          <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://filecoin.io/"><img
-                src="/sponsores/filecoin.png" loading="lazy" alt="FILECOIN LOGO"
-                class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
-          <div class="z-10 flex flex-col items-center space-y-5 rounded py-5"><a href="https://replit.com/"><img
-                src="/sponsores/replit.png" loading="lazy" alt="REPLIT LOGO"
-                class="h-auto w-72 rounded-2xl bg-gray-900 object-contain p-3 sm:h-28"></a></div>
-        </div>
-      </section>
-      <section id="Schedule"
-        class="flex min-h-screen flex-col items-center justify-center bg-gray-900 px-4 pb-4 pt-5 sm:px-10 sm:pt-10">
-        <div class="title-gradient my-10 text-center text-4xl font-semibold sm:mt-20 sm:text-5xl">Schedule</div>
-        <div class="main">
-          <ul class="timeline">
-            <li class="timeline-item">
-              <div class="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">12:00 PM, 19th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Opening Ceremony</h2>
-                <p class="text-gray-300">Start Kick off Event</p>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">01:00 PM, 19th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Start of Hackathon</h2>
-                <p class="text-gray-300">The hackathon kicks Off! Participants begin working on their projects</p>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">1:30PM, 19th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Lunch Break</h2>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">06:00PM, 19th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Mentorship Session</h2>
-                <p class="text-gray-300">Mentorship sessions where industry experts and seasoned professionals will
-                  guide you with tips for success in the tech industry.</p>
-              </div>
-            </li>
-          </ul>
-          <ul class="timeline">
-            <li class="timeline-item">
-              <div class="timeline-content mr-[500px] w-[46%] rounded-lg border border-gray-700 bg-gray-900">
-                <h2 class="ml-5 text-2xl font-semibold text-white">01:30PM, 20th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Hackathon Ends!</h2>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">2:30PM, 20th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Presentation Round</h2>
-                <p class="text-gray-300">Participants present their projects to the judges</p>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-content mr-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">05:00PM, 20th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Announcement of Results</h2>
-                <p class="text-gray-300">Winners will be announced and prizes will be distributed.</p>
-              </div>
-            </li>
-            <li class="timeline-item">
-              <div class="timeline-content ml-32 w-[46%] rounded-lg border border-gray-700 bg-gray-900 ">
-                <h2 class="ml-5 text-2xl font-semibold text-white">05:30PM, 20th May</h2>
-                <h2 class="ml-5 text-xl font-semibold text-gray-300">Closing Ceremony</h2>
-                <p class="text-gray-300">Closing Ceremony</p>
-              </div>
-            </li>
-          </ul>
-        </div>
+     
       </section>
       <section id="Organizers" class="min-h-screen rounded-lg bg-gray-900 px-2 pb-4 pt-5 text-lg sm:px-10 sm:pt-10 ">
-        <div class="title-gradient mb-12 flex justify-center text-4xl font-semibold">Organizing Heads</div>
+        <div class="text-white  mb-12 flex justify-center text-4xl font-semibold">Organizing Heads</div>
         <div class="flex flex-wrap justify-center gap-4 sm:gap-10">
           <div
             class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-xl sm:w-1/6">
@@ -479,255 +359,10 @@
             </div>
           </div>
         </div>
-        <div class="title-gradient my-10 py-3 text-center text-4xl font-semibold sm:mt-20">Organizers</div>
-        <div class="flex flex-wrap justify-center gap-4 sm:gap-10">
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="/organizers/sakkurthi-sashank.jpeg" loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Sashank
-                sakkurthi</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://cdn.discordapp.com/attachments/1026519493100453942/1105378031872258078/IMG_20230501_230244_1.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Subrabala
-                Dash</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1101453061681057812/1105093954518651031/profile.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Amandeep
-                Kumar</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1105379652379353148/1105380326315925564/Lokesh_SSS.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Lokesh
-              </div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://lh3.googleusercontent.com/fife/APg5EObTmqcuz8YjBL8mtgHE61qSGaePzbqDbfs_sBKoJ6MDu16aqL3pZq6LOCXm1ERS0t5koRet9vCG14wo2t24DHRylwJLkOJfDHpWIb3z_G71MILpYM5H5fZd2Uhudb1Zftq0rYIGWLp2_GMRow76D69jaTg9Qj11CI64ydWEdseiGfRSm8muEbq4vR2Z3Y0zqv9yuNFSTImMu6Vv68D_iMWzHu1eEnrGCagPaXSVyikyeT1WwMKQtMeHOUUBGU8d1m2WDoWxVRzHM7rX5KQ9MAoXlwFeABiR4VtkyPgsgnoKDao0fMFoaw8S9MyNhzCy121PxnHjUiFYjsJlSz6zhik6yCS4jYaBUSrTG0TTsWrZlnLFVqFM1Q9MidzMUUB1dN0jdSY3fADoISkaDjGlhRIAdVEqVs7Fesz6d8MI0USHelYPN2OGxYeyv_Bd9YmRb0HrdkUVyM-tT_DJ8vEXYvGB-IgqWdQ8AwLD0zcWCE_UR8Q5s1Dynz-yG8-HNHvIoTLyfzI0amUMQlud2ctye8zwUGGs-Fw2r2Vy3Kl8sOxKF-vYBzrd1_AAOgFhPyL6eFz9Q78csubDfJpFAq08-kSTHn-tvmVP2OThxjhlq2Cvfr3M5F_IWjna-0TqlLs-19MC1wiLlnT7wzPV70xChDBQWA2uNieRD-cHLrHRBuyDHJGKGYMeduGVSGz0YqD67Y1rGbo-PNs2X_jQMaC1tdV9VxQMa-7QeZ4T1Ks_yICid-tgdpkXW30uqZS40ogq70sRllp-ncpy6tZZnRvqPRn8fHy0a6WQwlUPVLlt1pcYho3rLIm5P3wtXeuS3l7laBH3FrKa7Ge0pSvpAN0alFLUNWa3YMpHG11yXsEk7kUaGKqseilmBfYR98j_XVfAee_tPNNcltCk82GG5X1lbHsWC13sK5sl4TVQIsAT9M8oSH_Ekd1LbCd3SA0nFhZLbDMpnA3GZ7JyA7zGfe75E41obSNrYNff1RS2-K4p__YaGi0j__kDPIo55psRXL3JceDjAhnA0njwgGogtLlYSGEfj94jeqtshs3_avxV1HdfUXflmTQQbM6PyVFO9Yltx4RmQxO-bhXuL-fb6IFk703P71q2cw4vIAe6_ER_mO0fZjz5vHIVvzbH5AshnH92SbiavdjNezm1uBNrZDeOHz9SYp0JGCobCVjxEmvfH0mk9wtDhGvKNdejRduOKb8hq5VijcIxPo1qJJ3Y5exra_UWYPdvHfZUwNhxhwR1XKlMTuD2aYODBQRCAjfDQVzA06MuiBZDFrLydDC2w16DVPntpeTZuwMpZ8tldsA0edZDckSLDT-kFpJucuFLKP7AV8DrtQVNdEBC4z6YWQ4JxFsdU9801NEHtEDHwcqvSgW7c9bRFLqukV0E4ZJKTxvULudFr7npBU5Gxrq4G1PnKj3z4cCka26bFPKyr3_y2yGVHU-SGAec9GcKeMLPmE1DB6SohYlrwsAG1OnlUVmqMh-tlIrw7hMRTTHojjjIKNbksD1pI6SfPxziAY3xoxDfDCvdKIlGCHBTtsYG-oE8-_BHAmZ3mXPOL7kSd6k=w4000-h8220"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Subhash
-              </div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://lh3.googleusercontent.com/fife/APg5EOZZ1bBSABknjg74fxH73HPVshYiLNlUlaALXbGU9GAqnQcOta307NywZgnYrwEL3XRyIcRENWjTT8wt0W8ZOL-8wMx7CKcE4rfoKZS7N9kzcwc_jMxU6RYvz_IXgt7XQIBmoAJ7qj8K3CNvbZvbjEDH-0n8Q6C9FzF-N88r3iYqQy2bsOUDXziLgy2Bw16EBD_IzsUknAIuswWWtWgMNvkqyn3ZmWdThzHikq__Yt9ZGyKVUk12YzGnRtvjbz5ZnldsGBYSV16zxMLkj0z27wAACy5FInSebmfk0hjwEx-5DhkxFyRf3aTLUWfWJ-nkcPYX66yDQeaxTFuWF5_DWF2kdcu6uxv6vBiAnxhD-Y2A0_xf3yihY9ZlxABp_ek9WTzL_9qXP0KrPhJWuQXVwiha6ZkOz9UqFgTBNWzxFj-9kdrR0vdTtDCvfbbwhxRaGtWFWczfewiOsnGaZfVCnrLGRtF-1rpxr7ByDmP46FRa6EOODT0mqDdLWOZIa29GC-NUXffUr1FlEMXW9i73GuoYV1Vj8IcleBBTFFAvp2c-JpV2qX_h97KvKVzUwOKKmLms4BfnuDP_CzGqRd3bGAuIEB7RwGWJXvVxJMOJYl0e8npCGaNt_XNu7j97ViNwU-0248gZjfL0mhU6RuorcnRz5PcGucDuNZJ64l-LjO-Ph8ObzjVR6V4De5vDMwo61UYWmvl1Olyx0Z2H8KAaQ28BgjaMEOqFk8Ag1YwJzu79SUSRNgze-0-wtKoB4P7DtdMku5SxtsmlBpCRXE1DsJkIMVCL4NYl_ClXeH0jHa5bZS9LtIQaqUKuaVkpOE0hXOJL1WzCXBEQZQNaHYBS2RTRIgKrDzSZxrpw8EEIwhAsQFT2A7rryntkAM6XauucwMurNr9cQ_9hAaPFzdwS195qF3beuJdacOlY4wzjs2Mst51N0EZ6W2mrbx2ZdcxZDtd9fhsblbg9O03dRc5YSuPv6NuiYARgGh04EwJs6Ses22if9niVkvZAyy5BpDmYegP6B0R7IqhF24l-UKLiHmyWvBVkjQ_1MWtPyZJja39m7fdIjLPSYeMrtxnJf17w5yUWMuzqnhtxyhCKrntok_khmx5fprb6FVsc8H-KtTjcQPFrbq_GvF0cFcMkIhSBaJsvbGCkm6_kikQpxafSh6N1UD7YBMSK5IOY441i0Z_chbBOUJxfZ_wTnBQ5cA0mR9u4ZgDhlvXNYe3yINnhhk_Zd3zBbr3zPekER6ZdvY_p2MHjJd1xQzYV5BfonpolKwRLYTo65LLhY20mX-AqBoKwQ3KNpWOEYkuArAegEQzpp6C53p-KzR7HPlP3NnrW39oMm7wVDwvZKm3m1WNYhghAWw-0z-fwQX7jN72sV1X5VXgvhTJb3gBYyfGgP1s3HXGi84zUdj7Xq-cLpL1Mx-CxDgaxfy0NDMxw9R-JjH79cflOWvz8od-acUKwFJAtTCu7PnBNQe9t_l8aINjwOf4m7_jNVAAuw92MwzZke_8CiI4rSI5OEVLTLFD2sbXUpVG0iJI1tGgrehtRWj9Zukwq3MNA9v3_3EBfcCE=w1994-h1528"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Kumar
-                Sashank</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1105131591640035338/1105133991578849290/image0.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Harsha
-              </div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.discordapp.net/attachments/1004365336348467251/1105107688758714468/IMG_20220709_224640_843.jpg?width=468&amp;height=468"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Pranathi
-                Jayanthi</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://media.discordapp.net/attachments/1105110231538749531/1105110913817772103/phto.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Gyanesh
-                Rao</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.discordapp.net/attachments/1104858606563762307/1104859143770222742/cc6e7247bfa4dfe212a4dc1149cc9346.png"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Aniruddha
-              </div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Technical</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.licdn.com/dms/image/D5603AQHJKgrPj7UBZQ/profile-displayphoto-shrink_100_100/0/1670266813666?e=1688601600&amp;v=beta&amp;t=8CMFgzDBV6r6zVRztJuFfUsPK6YydNMS50Juukh5XCU"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Shivansh
-                Goel</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Logistics</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.discordapp.net/attachments/1105110231538749531/1105111474696900608/20230508_180801.jpg?width=351&amp;height=468"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Amrit
-                Kumar</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Logistics</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.licdn.com/dms/image/D5603AQEXZmgdvjgzUQ/profile-displayphoto-shrink_800_800/0/1670266304634?e=2147483647&amp;v=beta&amp;t=Y9h_7GXgUJOi6EyONM6ynbqBAbgvkean_RILaL4ZYiQ"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Madhav
-                Walia</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Sponsorship</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1105110231538749531/1105110928330072104/Divyanshu.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Divyanshu
-                Singh</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Sponsorship</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.licdn.com/dms/image/D5603AQH2uiEjBhpV9g/profile-displayphoto-shrink_800_800/0/1674765408084?e=2147483647&amp;v=beta&amp;t=wo_E3IfYhmQahDZbnmITBVX0elkLlF-GXxt-XMpQSkc"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Omkar G
-              </div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Sponsorship</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.licdn.com/dms/image/D5603AQGEiyXl2Jpe9w/profile-displayphoto-shrink_800_800/0/1670991531714?e=2147483647&amp;v=beta&amp;t=DoC0PK8nYVhAqQCLmSLwLe89p0DgCMYKu_MF6nnrrSM"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Ayush
-                Singh</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Finance</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.licdn.com/dms/image/D5603AQGpXocj5gU4_A/profile-displayphoto-shrink_800_800/0/1672340633765?e=2147483647&amp;v=beta&amp;t=uy0XtggyO3UjE__PZYMB5oGI9V4Hl0gIDLcTQf5o3iw"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">BVS
-                Lakshman</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Finance</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://media.licdn.com/dms/image/C4E03AQGhh1NyGhBcGA/profile-displayphoto-shrink_100_100/0/1652032587884?e=1688601600&amp;v=beta&amp;t=otJVfQaSmX4V6SeI1oLKPMZbs15HC_dypzdwLTosRM4"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Amey
-                Khare</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Public Relations</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1105053537790074901/1105057832660901898/Vedika_Gupta.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Vedika
-                Gupta</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Public Relations</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img
-              src="https://cdn.discordapp.com/attachments/1026438778442743819/1105142358238040154/IMG_20230508_1701312.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">SLS
-                Praneet</div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Public Relations</div>
-            </div>
-          </div>
-          <div
-            class="z-10 flex w-[44%] flex-col items-center space-y-5 rounded-3xl bg-black bg-opacity-30 p-8 text-center text-xl sm:w-1/6">
-            <img src="https://cdn.discordapp.com/attachments/1104869741165826048/1105108287046811708/njkbkj.jpg"
-              loading="lazy" alt=""
-              class="h-20 w-20 rounded-md object-cover object-center sm:h-32 sm:w-36 md:h-28 md:w-28">
-            <div>
-              <div class="indigo mb-2 text-center font-medium text-gray-200 antialiased sm:text-sm md:text-xl">Piyush S
-              </div>
-              <div class="flex justify-center text-lg text-gray-300 sm:text-sm">Public Relations</div>
-            </div>
-          </div>
-        </div>
+        
       </section>
       <section id="FAQs" class="min-h-screen bg-gray-900 py-4 pt-20">
-        <div class="title-gradient mb-20 text-center text-4xl font-semibold sm:text-5xl">Frequently Asked Questions
+        <div class="text-white  mb-20 text-center text-4xl font-semibold sm:text-5xl">Frequently Asked Questions
         </div>
         <div class="mx-auto px-3">
           <div class="mx-auto flex max-w-2xl flex-col space-y-3 rounded-md">
@@ -850,7 +485,7 @@
         </div>
       </section>
       <section id="ContactUs" class="min-h-screen bg-gray-900 py-10">
-        <div class="title-gradient my-20 text-center text-4xl font-semibold sm:text-5xl">Contact Us</div>
+        <div class="text-white  my-20 text-center text-4xl font-semibold sm:text-5xl">Contact Us</div>
         <div class="my-8 flex flex-col items-center justify-evenly space-y-10">
           <div class="flex items-center justify-center space-x-6"><svg xmlns="http://www.w3.org/2000/svg" width="24"
               height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
