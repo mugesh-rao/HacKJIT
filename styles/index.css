@@ -37,30 +37,30 @@
   .swiper-slide--one {
     border-radius: 30px;
 
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../asset/events.jpg") no-repeat 50% 50%/cover;
   }
   
   .swiper-slide--two {
     border-radius: 30px;
 
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../asset/events.jpg") no-repeat 50% 50%/cover;
   }
   
   .swiper-slide--three {
     border-radius: 30px;
 
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../asset/events.jpg") no-repeat 50% 50%/cover;
   }
   
   .swiper-slide--four {
     border-radius: 30px;
 
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../asset/events.jpg") no-repeat 50% 50%/cover;
   }
   
   .swiper-slide--five {
   border-radius: 30px;
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../asset/events.jpg") no-repeat 50% 50%/cover;
   }
   
   .swiper-3d .swiper-slide-shadow-left,
@@ -84,3 +84,19 @@
       width: 85%;
     }
   }
+
+
+  @keyframes bubble {
+    0%, 100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-bubble {
+    animation: bubble 2s ease-in-out infinite;
+}
