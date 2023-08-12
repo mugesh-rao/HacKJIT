@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="./styles/index.css">
+
   <title>NFTS 2023 - IEEE </title>
 </head>
 
@@ -28,43 +31,58 @@
       <div class="flex min-h-screen items-center justify-center bg-gray-900">
         <div class="fixed left-0 right-0 top-0 z-20 h-14 border-b border-gray-700 bg-gray-900 bg-opacity-80 backdrop-blur-lg backdrop-filter">
           <div class="flex justify-between items-center h-full px-4">
-              <!-- Logo Image -->
-              <a href="#" class="flex items-center text-gray-300 hover:text-indigo-500">
-                  <img src="./asset/ieee1.png" class="w-16 h-8 ml-8" alt="">
-              </a>
-              
-              <!-- Desktop Navigation -->
-              <div class="hidden md:flex space-x-8">
-                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Tracks">Tracks</a>
-                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Sponsors">Sponsors</a>
-                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Venue">Venue</a>
-                  <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="#Organizers">Admin</a>
-                  <a class="cursor-pointer py-2 px-4 my-2 bg-blue-600 rounded-lg text-white text-center hover:rounded-2xl" href="#">Registers</a>
-              </div>
-              
-              <!-- Mobile Navigation -->
-              <div class="md:hidden">
-                  <button id="mobileNavButton" onclick="toggleMobileNav()">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-white">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
-                      </svg>
-                  </button>
-              </div>
-          </div>
-      </div>
-      
-      
-      <div id="mobileNavModal" class="hidden md:hidden fixed z-20 top-0 left-0 w-full h-full flex mx-auto items-center justify-center bg-black bg-opacity-50">
-          <div class=" rounded-lg p-6 space-y-10">
-              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block text-2xl font-bold " href="#Tracks" onclick="closeMobileNav()">Tracks</a>
-              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#Sponsors" onclick="closeMobileNav()">Sponsors</a>
-              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block text-2xl font-bold " href="#Schedule" onclick="closeMobileNav()">Venue</a>
-              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#Organizers" onclick="closeMobileNav()">Admin</a>
-              <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#" onclick="closeMobileNav()">Registers</a>
-              <a class="cursor-pointer text-red-500 hover:text-red-500 block  text-2xl font-bold border border-red-500 text-center rounded-lg p-1" onclick="closeMobileNav()">Close</a>
+            <!-- Logo Image -->
+            <a href="#" class="flex items-center text-gray-300 hover:text-indigo-500">
+                <img src="../asset/ieee1.png" class="w-16 h-8 ml-8" alt="">
+            </a>
 
-          </div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="./Tracks.html">Tracks</a>
+                <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3"
+                    href="./Sponsors.html">Sponsors</a>
+                <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3" href="./Venue.html">Venue</a>
+                <a class="cursor-pointer text-gray-300 hover:text-indigo-500 my-3"
+                    href="#Organizers">Admin</a>
+                <a class="cursor-pointer py-1 px-4 my-2 bg-purple-600 rounded-lg text-white text-center hover:rounded-xl"
+                    href="#">Registers</a>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden">
+                <button id="mobileNavButton" onclick="toggleMobileNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 9h16.5m-16.5 6.75h16.5"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
       </div>
+      
+      
+      <div id="mobileNavModal"
+      class="hidden md:hidden fixed z-20 top-0 left-0 w-full h-full flex mx-auto items-center justify-center bg-black bg-opacity-70">
+      <div class=" rounded-lg p-6 space-y-10">
+          <a href="../index.html" class="flex items-center text-gray-300 hover:text-indigo-500" onclick="closeMobileNav()">
+              <img src="../asset/ieee1.png" class="w-20 h-10 " alt="" >
+          </a>
+          <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block text-2xl font-bold "
+              href="./Tracks.html" onclick="closeMobileNav()">Tracks</a>
+          <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold"
+              href="./Sponsors.html" onclick="closeMobileNav()">Sponsors</a>
+          <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block text-2xl font-bold "
+              href="./Venue.html" onclick="closeMobileNav()">Venue</a>
+          <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold"
+              href="#" onclick="closeMobileNav()">Admin</a>
+          <a class="cursor-pointer text-gray-100 hover:text-indigo-500 block  text-2xl font-bold" href="#"
+              onclick="closeMobileNav()">Registers</a>
+          <a class="cursor-pointer text-red-500 hover:text-red-500 block  text-2xl font-bold border border-red-500 text-center rounded-lg p-1"
+              onclick="closeMobileNav()">Close</a>
+
+      </div>
+  </div>
       
       <script>
           const mobileNavModal = document.getElementById("mobileNavModal");
@@ -122,6 +140,37 @@
     </section>
     
       </div>
+    
+
+      <section id="wiper" class="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-14">
+        <div class="flex items-center justify-center ">
+          <span class="text-4xl font-semibold sm:text-5xl bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 bg-clip-text text-transparent">
+            11th - 13th November '22
+          </span>
+        </div>
+        
+        <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+          </div>
+    
+          <div class="swiper-slide swiper-slide--three">
+    
+          </div>
+    
+          <div class="swiper-slide swiper-slide--four">
+
+          </div>
+    
+          <div class="swiper-slide swiper-slide--five">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      </section>
       <section id="Tracks" class="my-0 min-h-screen bg-gray-900 px-6 py-16 sm:px-20 sm:pt-14">
      
         <div class="text-white  mb-20 text-center text-4xl font-semibold sm:text-5xl">Tracks</div>
@@ -422,5 +471,7 @@
     </div>
   </div>
 </body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+<script  src="./script/index.js"></script>
 
 </html>

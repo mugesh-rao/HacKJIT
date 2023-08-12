@@ -1,0 +1,86 @@
+
+
+.swiper {
+    width: 100%;
+    padding-top: 3.125rem;
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination {
+    bottom: 1.25rem !important;
+  }
+  
+  .swiper-slide {
+    width: 18.75rem;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+  }
+  
+  .swiper-slide div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 0.625rem;
+  }
+  
+  .swiper-slide-active div {
+    display: block;
+    opacity: 1;
+  }
+  
+  .swiper-slide--one {
+    border-radius: 30px;
+
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--two {
+    border-radius: 30px;
+
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--three {
+    border-radius: 30px;
+
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--four {
+    border-radius: 30px;
+
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--five {
+  border-radius: 30px;
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("http://ifest.daiict.ac.in/images/homepage_images/I7.jpg") no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
+  @media screen and (min-width: 48rem) {
+    main {
+      display: flex;
+      align-items: center;
+    }
+  
+    .bg,
+  .bg2 {
+      opacity: 0.1;
+    }
+  }
+  @media screen and (min-width: 93.75rem) {
+    .swiper {
+      width: 85%;
+    }
+  }
