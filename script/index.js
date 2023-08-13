@@ -56,7 +56,12 @@ var swiper = new Swiper(".swiper", {
     }
   });
 
+  const mobileMenuButton = document.getElementById("mobileMenuButton");
+  const navbar = document.getElementById("navbar");
 
+  mobileMenuButton.addEventListener("click", () => {
+    navbar.classList.toggle("mobile-open");
+  });
         
   const btnOpenModalAiMl = document.querySelector('.btn-open-modal-ai-ml');
   const btnOpenModalGameDev = document.querySelector('.btn-open-modal-game-dev');

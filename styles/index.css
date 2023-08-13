@@ -135,9 +135,33 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
+   /* Mobile Navbar */
+   .navbar.mobile-open {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
 
-/* Add your existing CSS here */
-/* Card styling */
+  /* Mobile Navigation Links */
+  .navbar.mobile-open .top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Hide desktop navigation on mobile */
+  @media (max-width: 768px) {
+    .top-left {
+      display: none;
+    }
+  }
 .z-10 {
   position: relative;
 }
