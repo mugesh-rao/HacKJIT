@@ -11,6 +11,7 @@
 
   <title>NFTS 2023 - IEEE </title>
 
+
   <script>
     document.onreadystatechange = function () {
       if (document.readyState === 'loading') {
@@ -18,9 +19,11 @@
       }
     };
     window.onload = function () {
-      document.getElementById('loader').style.display = 'none';
+      setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+      }, 2000); // 3000 milliseconds = 3 seconds
     };
-  </script>
+</script>
 
 </head>
 
@@ -51,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar absolute id=" navbar">
+      <div class="navbar absolute " id="navbar">
         <div class="top-left">
           <a href="./pages/Tracks.html" class="comp text-white hover:text-purple-600 transition duration-300">Tracks</a>
           <a href="./pages/Sponsors.html"
@@ -82,7 +85,47 @@
       </div>
 
  
-
+     
+      
+      <script>
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const navbar = document.getElementById("navbar");
+      
+        mobileMenuButton.addEventListener("click", () => {
+          navbar.classList.toggle("mobile-open");
+        });
+      </script>
+      
+      <style>
+        /* Mobile Navbar */
+        .navbar.mobile-open {
+          position: fixed;
+          background-color: rgba(0, 0, 0, 0.9);
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+        }
+      
+        /* Mobile Navigation Links */
+        .navbar.mobile-open .top-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      
+        /* Hide desktop navigation on mobile */
+        @media (max-width: 768px) {
+          .top-left {
+            display: none;
+          }
+        }
+      </style>
+      
 
 
 
@@ -432,84 +475,90 @@
 
       </section>
 
-      <section id="ContactUs" class="min-h-full bg-black py-10">
-        <div class="text-white  my-20 text-center text-4xl font-semibold sm:text-5xl">Contact Us</div>
-        <div class="flex flex-row justify-between mx-24">
-          <div class="z-20  px-8 grid gap-8 grid-cols-1 md:grid-cols-2  text-gray-900 rounded-lg shadow-lg">
-
-            <div class="z-20 bg-black bg-opacity-10 rounded-xl px-4 py-4">
-              <div>
-                <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-                <input
-                  class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text" placeholder="">
-              </div>
-              <div class="mt-8">
-                <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
-                <input
-                  class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text">
-              </div>
-              <div class="mt-8">
-                <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
-                <textarea
-                  class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-              </div>
-              <div class="mt-8">
-                <button
-                  class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-                  Send Message
-                </button>
-              </div>
+      
+      <section id="ContactUs" class="bg-black py-10">
+        <div class="text-white text-center text-4xl font-semibold sm:text-5xl my-10">Contact Us</div>
+        <div class="flex flex-col md:flex-row justify-between mx-6 sm:mx-10 md:mx-24">
+          <div class="w-full md:w-1/2 bg-opacity-90 bg-gray-900 rounded-xl px-4 py-4 mt-6 md:mt-0">
+            <div class="mb-6">
+              <label for="fullName" class="block text-sm text-gray-600 font-bold uppercase mb-1">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                class="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                placeholder="John Doe"
+              >
+            </div>
+            <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+              <input
+                class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text">
+            </div>
+            <div class="mt-8">
+              <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
+              <textarea
+                class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+            </div>
+      
+            <div class="mt-8">
+              <button
+                class="w-full bg-indigo-500 text-gray-100 p-3 rounded-lg font-bold uppercase tracking-wide focus:outline-none focus:shadow-outline"
+              >
+                Send Message
+              </button>
             </div>
           </div>
-          <div class="flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center justify-center mt-6 md:mt-0">
+            <div class="flex flex-col items-center justify-center">
 
 
-            <div class="flex items-center justify-center space-x-6">
-              <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
-                  href="https://www.instagram.com/mugeshraoo/" target="_blank" rel="noopener noreferrer"
-                  class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50"
-                    height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-fuchsia-500"
-                    data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                    <path d="M16.5 7.5l0 .01"></path>
-                  </svg></a></div>
-              <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
-                  href="https://twitter.com/Mugesh_Rao_Dev" target="_blank" rel="noopener noreferrer"
-                  class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50"
-                    height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"
-                    data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                    <path
-                      d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
-                    </path>
-                  </svg></a></div>
-              <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
-                  href="https://www.linkedin.com/in/mugesh-rao-2003/" target="_blank" rel="noopener noreferrer"
-                  class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50"
-                    height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                    stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"
-                    data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
-                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                    <path d="M8 11l0 5"></path>
-                    <path d="M8 8l0 .01"></path>
-                    <path d="M12 16l0 -5"></path>
-                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-                  </svg></a></div>
+              <div class="flex items-center justify-center space-x-6">
+                <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
+                    href="https://www.instagram.com/mugeshraoo/" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                      height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" class="text-fuchsia-500"
+                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
+                      <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M16.5 7.5l0 .01"></path>
+                    </svg></a></div>
+                <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
+                    href="https://twitter.com/Mugesh_Rao_Dev" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                      height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"
+                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
+                      <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                      </path>
+                    </svg></a></div>
+                <div class="z-10 flex items-center justify-center rounded-full bg-gray-900 bg-opacity-70 p-2"><a
+                    href="https://www.linkedin.com/in/mugesh-rao-2003/" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-200 hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                      height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"
+                      data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
+                      <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                      <path d="M8 11l0 5"></path>
+                      <path d="M8 8l0 .01"></path>
+                      <path d="M12 16l0 -5"></path>
+                      <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                    </svg></a></div>
+              </div>
+  
+  
+              <div class="flex flex-col items-center justify-center space-y-6 pt-8 text-white">
+                <h5 class="text-center text-2xl font-semibold text-gray-200">In Collaboration With</h5><img
+                  src="./asset/ieee1.png" alt="IEEE" class="z-10 h-24 rounded-md p-4">
+              </div>
+  
             </div>
-
-
-            <div class="flex flex-col items-center justify-center space-y-6 pt-8 text-white">
-              <h5 class="text-center text-2xl font-semibold text-gray-200">In Collaboration With</h5><img
-                src="./asset/ieee1.png" alt="IEEE" class="z-10 h-24 rounded-md p-4">
-            </div>
-
           </div>
         </div>
       </section>
+      
     </div>
   </div>
 </body>
