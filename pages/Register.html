@@ -161,35 +161,7 @@
                 </div>
               </div>
       
-      
-              <div class="mb-5">
-                <label class="mb-3 block text-base font-medium text-white">
-                  Attendance Days
-                </label>
-                <div class="flex items-center space-x-6">
-                  <div class="flex items-center">
-                    <input type="radio" name="attendanceDays" id="day1" class="h-5 w-5" value="day1" />
-                    <label for="day1" class="pl-3 text-base font-medium text-white">
-                      Day 1
-                    </label>
-                  </div>
-                  <div class="flex items-center">
-                    <input type="radio" name="attendanceDays" id="day2" class="h-5 w-5" value="day2" />
-                    <label for="day2" class="pl-3 text-base font-medium text-white">
-                      Day 2
-                    </label>
-                  </div>
-                  <div class="flex items-center">
-                    <input type="radio" name="attendanceDays" id="bothDays" class="h-5 w-5" value="bothDays" />
-                    <label for="bothDays" class="pl-3 text-base font-medium text-white">
-                      Both
-                    </label>
-                  </div>
-                </div>
-              </div>
-      
-      
-      
+     
       
       
               <div class="mb-5">
@@ -230,7 +202,94 @@
                     <div class="mb-8">
                       
                       
-                      <img src="https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg" alt="QR Code" class="w-32 h-32 mx-auto mb-4" />
+                      <div class="mb-5">
+                        <label class="mb-3 block text-base font-medium text-white">
+                          Attendance Days
+                        </label>
+                        <div class="flex items-center space-x-6">
+                          <div class="flex items-center">
+                            <input
+                              type="radio"
+                              name="attendanceDays"
+                              id="day1"
+                              class="h-5 w-5"
+                              value="day1"
+                            />
+                            <label
+                              for="day1"
+                              class="pl-3 text-base font-medium text-white"
+                            >
+                              Day 1
+                            </label>
+                          </div>
+                          <div class="flex items-center">
+                            <input
+                              type="radio"
+                              name="attendanceDays"
+                              id="day2"
+                              class="h-5 w-5"
+                              value="day2"
+                            />
+                            <label
+                              for="day2"
+                              class="pl-3 text-base font-medium text-white"
+                            >
+                              Day 2
+                            </label>
+                          </div>
+                          <div class="flex items-center">
+                            <input
+                              type="radio"
+                              name="attendanceDays"
+                              id="bothDays"
+                              class="h-5 w-5"
+                              value="bothDays"
+                            />
+                            <label
+                              for="bothDays"
+                              class="pl-3 text-base font-medium text-white"
+                            >
+                              Both
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="mb-5">
+                        <label class="mb-3 block text-base font-medium text-white">
+                          QR Code Amount
+                        </label>
+                        <div class="flex items-center space-x-2">
+                          <img
+                            src="https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg"
+                            alt="QR Code"
+                            id="qrCodeImage"
+                            class="w-1/2 h-1/2"
+                          />
+                          <p class="text-white" id="qrCodeAmount">200 Rs</p>
+                        </div>
+                      </div>
+                      
+                      <script>
+                        const qrCodeImage = document.getElementById('qrCodeImage');
+                        const qrCodeAmount = document.getElementById('qrCodeAmount');
+                        const attendanceDaysRadios = document.getElementsByName('attendanceDays');
+                      
+                        attendanceDaysRadios.forEach(radio => {
+                          radio.addEventListener('change', function () {
+                            if (radio.value === 'bothDays') {
+                              qrCodeImage.src = 'https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg';
+                              qrCodeAmount.textContent = '400 Rs';
+                            } else {
+                              qrCodeImage.src = 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/MSNBC/Components/Photo/_new/110322-qr-code-hmed-425p.jpg';
+                              qrCodeAmount.textContent = '200 Rs';
+                            }
+                          });
+                        });
+                      </script>
+                      
+              
+              
                 
                       <input type="file" name="file" id="file" class="sr-only" />
                       <label for="file"
