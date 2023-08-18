@@ -1,336 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="flex items-center justify-center p-12">
-       
-        <div class="mx-auto w-full max-w-[550px] bg-white">
-          <form action="#" method="POST">
-         
-            <div class="-mx-3 flex flex-wrap">
-                <div class="w-full px-3 sm:w-1/2">
-                  <div class="mb-5">
-                    <label
-                      for="fName"
-                      class="mb-3 block text-base font-medium text-[#07074D]"
-                    >
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      name="fName"
-                      id="fName"
-                      placeholder="First Name"
-                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                    />
-                  </div>
-                </div>
-                <div class="w-full px-3 sm:w-1/2">
-                  <div class="mb-5">
-                    <label
-                      for="lName"
-                      class="mb-3 block text-base font-medium text-[#07074D]"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      name="lName"
-                      id="lName"
-                      placeholder="Last Name"
-                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="-mx-3 flex flex-wrap">
-                <div class="w-full px-3 sm:w-1/2">
-                  <div class="mb-5">
-                    <label
-                      for="fName"
-                      class="mb-3 block text-base font-medium text-[#07074D]"
-                    >
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      name="fName"
-                      id="fName"
-                      placeholder="First Name"
-                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                    />
-                  </div>
-                </div>
-                <div class="w-full px-3 sm:w-1/2">
-                  <div class="mb-5">
-                    <label
-                      for="lName"
-                      class="mb-3 block text-base font-medium text-[#07074D]"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      name="lName"
-                      id="lName"
-                      placeholder="Last Name"
-                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="mb-5">
-                <label
-                  for="guest"
-                  class="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Year
-                </label>
-                <input
-                  type="number"
-                  name="guest"
-                  id="guest"
-                  placeholder="5"
-                  min="0"
-                  max="4"
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div>
-              <div class="mb-5">
-                <label class="mb-3 block text-base font-medium text-[#07074D]">
-                  Are you coming to the event?
-                </label>
-                <div class="flex items-center space-x-6">
-                  <div class="flex items-center">
-                    <input
-                      type="radio"
-                      name="radio1"
-                      id="radioButton1"
-                      class="h-5 w-5"
-                    />
-                    <label
-                      for="radioButton1"
-                      class="pl-3 text-base font-medium text-[#07074D]"
-                    >
-                      Yes
-                    </label>
-                  </div>
-                  <div class="flex items-center">
-                    <input
-                      type="radio"
-                      name="radio1"
-                      id="radioButton2"
-                      class="h-5 w-5"
-                    />
-                    <label
-                      for="radioButton2"
-                      class="pl-3 text-base font-medium text-[#07074D]"
-                    >
-                      No
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="-mx-3 flex flex-wrap">
-                <div class="w-full px-3 sm:w-1/2">
-                    <div class="mb-5">
-                        <label
-                          for="phone"
-                          class="mb-3 block text-base font-medium text-[#07074D]"
-                        >
-                          Phone Number
-                        </label>
-                        <input
-                          type="text"
-                          name="phone"
-                          id="phone"
-                          placeholder="Enter your phone number"
-                          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                        />
-                      </div>
-                </div>
-                <div class="w-full px-3 sm:w-1/2">
-                    <div class="mb-5">
-                        <label
-                          for="email"
-                          class="mb-3 block text-base font-medium text-[#07074D]"
-                        >
-                          Email Address
-                        </label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Enter your email"
-                          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                        />
-                      </div>
-                </div>
-              </div>
-        
-           
-           
-        
-              <div class="mb-5">
-                <label for="guest" class="mb-3 block text-base font-medium text-[#07074D]">
-                  Year
-                </label>
-                <input
-                  type="number"
-                  name="guest"
-                  id="guest"
-                  placeholder="5"
-                  min="0"
-                  max="4"
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div>
-         
-          
-              
-            
-            
-              
-              <div class="mb-5">
-                <label for="paymentMethod" class="mb-3 block text-base font-medium text-[#07074D]">
-                  Payment Method
-                </label>
-                <select
-                  name="paymentMethod"
-                  id="paymentMethod"
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  required
-                >
-                  <option value="" disabled selected>Select Payment Method</option>
-                  <option value="online">Online Payment</option>
-                  <option value="offline">Offline Payment</option>
-                </select>
-              </div>
-              
-              <div class="mb-5" id="onlinePaymentDetails">
-                <div class="mb-6 pt-4">
-                    <label class="mb-5 block text-xl font-semibold text-[#07074D]">
-                      Upload File
-                    </label>
-            
-                    <div class="mb-8">
-                      <input type="file" name="file" id="file" class="sr-only" />
-                      <label
-                        for="file"
-                        class="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center"
-                      >
-                        <div>
-                          <span class="mb-2 block text-xl font-semibold text-[#07074D]">
-                            Drop files here
-                          </span>
-                          <span class="mb-2 block text-base font-medium text-[#6B7280]">
-                            Or
-                          </span>
-                          <span
-                            class="inline-flex rounded border border-[#e0e0e0] py-2 px-7 text-base font-medium text-[#07074D]"
-                          >
-                            Browse
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-              </div>
-              
-              <div class="mb-5" id="offlinePaymentDetails">
-                <div class="mb-5 pt-3">
-                    <label
-                      class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl"
-                    >
-                    NSFT Team Member Details              </label>
-                    <div class="-mx-3 flex flex-wrap">
-                      <div class="w-full px-3 sm:w-1/2">
-                        <div class="mb-5">
-                          <input
-                            type="text"
-                            name="area"
-                            id="area"
-                            placeholder="Enter area"
-                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full px-3 sm:w-1/2">
-                        <div class="mb-5">
-                          <input
-                            type="text"
-                            name="city"
-                            id="city"
-                            placeholder="Enter city"
-                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full px-3 sm:w-1/2">
-                        <div class="mb-5">
-                          <input
-                            type="text"
-                            name="state"
-                            id="state"
-                            placeholder="Enter state"
-                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                          />
-                        </div>
-                      </div>
-                      <div class="w-full px-3 sm:w-1/2">
-                        <div class="mb-5">
-                          <input
-                            type="text"
-                            name="post-code"
-                            id="post-code"
-                            placeholder="Post Code"
-                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              
-              
-              <script>
-                const paymentMethodSelect = document.getElementById('paymentMethod');
-                const onlinePaymentDetails = document.getElementById('onlinePaymentDetails');
-                const offlinePaymentDetails = document.getElementById('offlinePaymentDetails');
-              
-                paymentMethodSelect.addEventListener('change', function () {
-                  const selectedOption = paymentMethodSelect.value;
-              
-                  if (selectedOption === 'online') {
-                    onlinePaymentDetails.style.display = 'block';
-                    offlinePaymentDetails.style.display = 'none';
-                  } else if (selectedOption === 'offline') {
-                    onlinePaymentDetails.style.display = 'none';
-                    offlinePaymentDetails.style.display = 'block';
-                  } else {
-                    onlinePaymentDetails.style.display = 'none';
-                    offlinePaymentDetails.style.display = 'none';
-                  }
-                });
-              </script>
-              
-            
-            <div>
-              <button
-                class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
-              >
-                Book Appointment
-              </button>
+  <div class="flex items-center justify-center p-12 bg-gray-900 ">
+
+    <div class="mx-auto w-full max-w-[550px] bg-gray-900">
+      <form action="#" method="POST">
+
+        <div class="-mx-3 flex flex-wrap">
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="mb-5">
+              <label for="fName" class="mb-3 block text-base font-medium text-white">
+                First Name
+              </label>
+              <input type="text" name="fName" id="fName" placeholder="First Name"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
             </div>
-          </form>
+          </div>
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="mb-5">
+              <label for="lName" class="mb-3 block text-base font-medium text-white">
+                Last Name
+              </label>
+              <input type="text" name="lName" id="lName" placeholder="Last Name"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+            </div>
+          </div>
         </div>
-      </div>
-  
-    
+        <div class="-mx-3 flex flex-wrap">
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="mb-5">
+              <label for="phone" class="mb-3 block text-base font-medium text-white">
+                Phone Number
+              </label>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+            </div>
+          </div>
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="mb-5">
+              <label for="email" class="mb-3 block text-base font-medium text-white">
+                Email Address
+              </label>
+              <input type="email" name="email" id="email" placeholder="Enter your email"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label for="guest" class="mb-3 block text-base font-medium text-white">
+            Year
+          </label>
+          <input type="number" name="guest" id="guest" placeholder="5" min="0" max="4"
+            class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+          <label class="mb-3 block text-base font-medium text-white">
+            Are you coming to the event?
+          </label>
+          <div class="flex items-center space-x-6">
+            <div class="flex items-center">
+              <input type="radio" name="radio1" id="radioButton1" class="h-5 w-5" />
+              <label for="radioButton1" class="pl-3 text-base font-medium text-white">
+                Yes
+              </label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" name="radio1" id="radioButton2" class="h-5 w-5" />
+              <label for="radioButton2" class="pl-3 text-base font-medium text-white">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="mb-5">
+          <label class="mb-3 block text-base font-medium text-white">
+            Attendance Days
+          </label>
+          <div class="flex items-center space-x-6">
+            <div class="flex items-center">
+              <input type="radio" name="attendanceDays" id="day1" class="h-5 w-5" value="day1" />
+              <label for="day1" class="pl-3 text-base font-medium text-white">
+                Day 1
+              </label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" name="attendanceDays" id="day2" class="h-5 w-5" value="day2" />
+              <label for="day2" class="pl-3 text-base font-medium text-white">
+                Day 2
+              </label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" name="attendanceDays" id="bothDays" class="h-5 w-5" value="bothDays" />
+              <label for="bothDays" class="pl-3 text-base font-medium text-white">
+                Both
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="mb-5">
+          <label for="designation" class="mb-3 block text-base font-medium text-white">
+            Designation
+          </label>
+          <select name="designation" id="designation"
+            class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            required>
+            <option value="" disabled selected>Select Designation</option>
+            <option value="faculty">Faculty</option>
+            <option value="student">Student</option>
+          </select>
+        </div>
+
+
+
+        <div id="paymentSection" style="display: none;">
+          <div class="mb-5">
+            <label for="paymentMethod" class="mb-3 block text-base font-medium text-white">
+              Payment Method
+            </label>
+            <select name="paymentMethod" id="paymentMethod"
+              class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              required>
+              <option value="" disabled selected>Select Payment Method</option>
+              <option value="online">Online Payment</option>
+              <option value="offline">Offline Payment</option>
+            </select>
+          </div>
+
+          <div class="mb-5" id="onlinePaymentDetails">
+            <div class="mb-6 pt-4">
+              <label class="mb-5 block text-xl font-semibold text-white">
+                Upload File
+              </label>
+
+              <div class="mb-8">
+                <input type="file" name="file" id="file" class="sr-only" />
+                <label for="file"
+                  class="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center">
+                  <div>
+                    <span class="mb-2 block text-xl font-semibold text-white">
+                      Drop files here
+                    </span>
+                    <span class="mb-2 block text-base font-medium text-[#6B7280]">
+                      Or
+                    </span>
+                    <span
+                      class="inline-flex rounded border border-[#e0e0e0] py-2 px-7 text-base font-medium text-white">
+                      Browse
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5" id="offlinePaymentDetails">
+            <div class="mb-5 pt-3">
+              <label class="mb-5 block text-md font-semibold text-white text-center sm:text-xl">
+                NSFT Team Member Details </label>
+              <div class="-mx-3 flex flex-wrap">
+                <div class="w-full px-3">
+                  <div class="mb-5">
+                    <input type="text" name="city" id="city" placeholder="Enter Details"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                  </div>
+                </div>
+                <div class="w-full px-3 sm:w-1/2">
+                  <div class="mb-5">
+                    <input type="text" name="state" id="state" placeholder="Member Name"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                  </div>
+                </div>
+                <div class="w-full px-3 sm:w-1/2">
+                  <div class="mb-5">
+                    <input type="text" name="post-code" id="post-code" placeholder="Member Password"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <script>
+          const designationSelect = document.getElementById('designation');
+          const paymentSection = document.getElementById('paymentSection');
+          const paymentMethodSelect = document.getElementById('paymentMethod');
+          const onlinePaymentDetails = document.getElementById('onlinePaymentDetails');
+          const offlinePaymentDetails = document.getElementById('offlinePaymentDetails');
+
+          designationSelect.addEventListener('change', function () {
+            const selectedDesignation = designationSelect.value;
+
+            if (selectedDesignation === 'student') {
+              paymentSection.style.display = 'block';
+            } else {
+              paymentSection.style.display = 'none';
+            }
+          });
+
+          paymentMethodSelect.addEventListener('change', function () {
+            const selectedOption = paymentMethodSelect.value;
+
+            if (selectedOption === 'online') {
+              onlinePaymentDetails.style.display = 'block';
+              offlinePaymentDetails.style.display = 'none';
+            } else if (selectedOption === 'offline') {
+              onlinePaymentDetails.style.display = 'none';
+              offlinePaymentDetails.style.display = 'block';
+            } else {
+              onlinePaymentDetails.style.display = 'none';
+              offlinePaymentDetails.style.display = 'none';
+            }
+          });
+        </script>
+
+
+        <div class="mb-5" id="onlinePaymentDetails">
+
+        </div>
+
+
+
+
+
+
+        <div>
+          <button
+            class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
+            Get Ticket
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
 </body>
+
 </html>
