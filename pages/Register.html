@@ -147,8 +147,12 @@
               <label class="mb-5 block text-xl font-semibold text-white">
                 Upload File
               </label>
-
+          
               <div class="mb-8">
+                
+                
+                <img src="https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg" alt="QR Code" class="w-32 h-32 mx-auto mb-4" />
+          
                 <input type="file" name="file" id="file" class="sr-only" />
                 <label for="file"
                   class="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center">
@@ -165,10 +169,21 @@
                     </span>
                   </div>
                 </label>
+                <label for="transactionId" class="block my-3 text-white font-medium">
+                  Transaction ID
+                </label>
+                <input
+                  type="text"
+                  name="transactionId"
+                  id="transactionId"
+                  placeholder="Enter transaction ID"
+                  class="w-full rounded-md border bg-white py-3 px-4 text-base text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+          
               </div>
             </div>
           </div>
-
+          
           <div class="mb-5" id="offlinePaymentDetails">
             <div class="mb-5 pt-3">
               <label class="mb-5 block text-md font-semibold text-white text-center sm:text-xl">
